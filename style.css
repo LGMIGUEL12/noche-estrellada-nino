@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a1a5c;
+}
+
+#scene {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  cursor: crosshair;
+}
+
+/* Fundido de entrada mientras se pinta el fondo */
+#veil {
+  position: fixed;
+  inset: 0;
+  background: #050c2e;
+  pointer-events: none;
+  transition: opacity 1.6s ease;
+}
+
+#veil.hidden {
+  opacity: 0;
+}
